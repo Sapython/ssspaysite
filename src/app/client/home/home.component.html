@@ -1,6 +1,6 @@
-<!-- <app-header></app-header> -->
+
 <header class="heading nav">
-  <button class="menu" ><i class="ri-menu-2-fill"></i></button>
+  <button class="menu" (click)="tooglebar()"><i class="ri-menu-2-fill"></i></button>
   <img class="logo" src="/assets/it_logo 1.png" alt="" />
 
   <div class="top-nav nav-links">
@@ -16,20 +16,42 @@
     <button class="btn start">Get Started</button>
   </div>
 </header>
-<!-- <section class="section1">
+<aside *ngIf="bar" >
+   <header>
+    <div class="one">
 
-        <div class="left">
-        <h1 class="h-main">BBPS<span class="txt">Solutions,</span></h1>
-        <h1 class="h-main">Bill<span class="txt">Payments,</span></h1>
-        <h1 class="h-main">AEPS<span class="txt">Services</span></h1>
-      </div>
-  
-      <div class="right">
-        <img class="phone" src="/assets/iPhone 12 Graphite Pro Top View Mockup label.png" alt="">
-      </div>
-
-    
-</section> -->
+        <img src="https://i.pravatar.cc/300" alt="">
+        <h3>
+         Sachin Pandey
+         <br>
+         pravakar@gmail.com
+        </h3>
+    </div>
+    <i class="ri-close-fill"></i>
+   </header>
+   <ul>
+    <li>
+        <i class="ri-home-2-line"></i>
+        <span>Home</span>
+    </li>
+    <li>
+        <i class="ri-customer-service-fill"></i>
+        <span>Service</span>
+    </li>
+    <li>
+        <i class="ri-task-line"></i>
+        <span>Appointment</span>
+    </li>
+    <li>    
+        <i class="ri-discuss-line"></i>
+        <span>About us</span>
+    </li>
+    <li>    
+        <i class="ri-logout-box-r-line"></i>
+        <span>Log Out</span>
+    </li>
+   </ul>
+</aside>
 <section id="section-1">
   <div class="container1">
     <span> <b> BBPS </b> Solutions,</span>
@@ -59,9 +81,93 @@
     <img src="../../../assets/image2.svg" alt="">
 </section>
 
-<div *ngIf="!sidebar">
-    a
-</div>
 
 
 
+
+
+<section class="customers">
+    <div class="container">
+      <!-- <img src="assets/bacc.png" alt=""> -->
+      <p id="heading">Customer are lovin’it</p>
+      <p id="height">Here are testimonials from clients.</p>
+      <p id="medium">Lorem Ipsum is simply dummy text of the printi- ng and typesetting industry. Lorem Ipsum has been the
+        industry's
+        standard dummy text eversince the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+        type specimen book.</p>
+    </div>
+    <div class="download">
+      <p id="big">You can grab it right now</p>
+      <div class="buttons">
+        <button><i class="fa-brands fa-google-play"></i>
+          <div>
+            <p>Get it On</p>
+            <p>Google Play</p>
+          </div>
+        </button>
+        <button>
+          <i class="fa-brands fa-apple"></i>
+          <div>
+            <p>Download On the</p>
+            <p>App Store</p>
+          </div>
+        </button>
+      </div>
+      <p id="down">Currenlty our app is in development but join our newsletter to test out our early release.</p>
+    </div>
+    <div class="get-in-touch">
+      <p id="heading">Get In Touch</p>
+      <div class="parent-container">
+        <div class="parent-flex">
+          <div class="flex">
+            <input type="text" placeholder="Your Name">
+            <input type="text" placeholder="Email">
+          </div>
+          <div class="flex">
+            <input type="text" placeholder="Phone ( Optional)">
+            <input type="text" placeholder="Company ( Optional)">
+          </div>
+        </div>
+        <textarea cols="30" rows="5" placeholder="message"></textarea>
+        <button>Send Message</button>
+      </div>
+    </div>
+  </section>
+  <div class="contact">
+    <div class="box">
+      <p>Email us</p>
+      <p>support@ssspay.in</p>
+    </div>
+    <div class="box">
+      <p>Drop in</p>
+      <p>
+        Purajagnnath sirsa,
+        Sirsa Kachhar, Sirsa Meja,
+        Prayagraj
+        </p>
+    </div>
+    <div class="box">
+      <p>Call any time</p>
+      <p>8601234556</p>
+      <p>9026269080</p>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="flex">
+      <p>Pages</p>
+      <div class="icons">
+        <i class="fa-brands fa-square-facebook"></i>
+        <i class="fa-brands fa-google"></i>
+        <i class="fa-brands fa-twitter"></i>
+      </div>
+    </div>
+    <div class="li">
+      <p>Home</p>
+      <p>About us</p>
+      <p>Privacy Policy</p>
+      <p>Return And Refund</p>
+      <p>Term and Conditions</p>
+    </div>
+    <hr>
+    <p>© 2019 Page protected by reCAPTCHA and subject to Google's Privacy Policy and Terms of Service</p>
+  </div>

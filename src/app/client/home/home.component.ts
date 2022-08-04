@@ -6,13 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-  sidebar :boolean = true;
+  bar = false;
 
   constructor() { }
 
   ngOnInit(): void {
   }
-  toogleSidebar(){
-    this.sidebar=!this.sidebar;
+  tooglebar(){
+    console.log('tooglebar');
+    this.bar=!this.bar;
   }
 }
