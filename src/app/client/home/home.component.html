@@ -1,22 +1,23 @@
 <!-- <app-header></app-header> -->
+<header class="heading nav">
+  <button class="menu" ><i class="ri-menu-2-fill"></i></button>
+  <img class="logo" src="/assets/it_logo 1.png" alt="" />
 
-<div class="heading nav">
-    <img class="logo" src="/assets/it_logo 1.png" alt="" />
-  
-    <div class="top-nav nav-links">
-      <ul>
+  <div class="top-nav nav-links">
+    <ul>
       <li><a href="#">Home</a></li>
       <li><a href="#">Services</a></li>
       <li><a href="#">Appointments</a></li>
       <li><a href="#">About us</a></li>
-      <button class="btn">Sign IN</button>
-      <button class="btn">Get Started</button>
     </ul>
-      </div>
-      </div>
-<section>
-    
-    <div class="section1">
+  </div>
+  <div class="buttons">
+    <button class="btn">Sign IN</button>
+    <button class="btn start">Get Started</button>
+  </div>
+</header>
+<!-- <section class="section1">
+
         <div class="left">
         <h1 class="h-main">BBPS<span class="txt">Solutions,</span></h1>
         <h1 class="h-main">Bill<span class="txt">Payments,</span></h1>
@@ -26,5 +27,41 @@
       <div class="right">
         <img class="phone" src="/assets/iPhone 12 Graphite Pro Top View Mockup label.png" alt="">
       </div>
-      </div>
+
+    
+</section> -->
+<section id="section-1">
+  <div class="container1">
+    <span> <b> BBPS </b> Solutions,</span>
+    <br />
+    <span> <b> Bill </b> Payments,</span>
+    <br />
+    <span> <b> AEPS </b> Services</span>
+
+    <br />
+    <p>Fastest Banking Services with best price!</p>
+
+    <br />
+    <div class="notify active">
+        <input type="text">
+      <button>Notify Me</button>
+    </div>
+    <div class="version">
+      <button>Beta</button>
+      Launcing V1.0 in
+    </div>
+  </div>
+  <div class="conatiner2">
+    <img src="/assets/image1.svg" />
+  </div>
 </section>
+<section id="section-2">
+    <img src="../../../assets/image2.svg" alt="">
+</section>
+
+<div *ngIf="!sidebar">
+    a
+</div>
+
+
+
