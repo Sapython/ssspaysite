@@ -654,3 +654,252 @@
         }
     }
   }
+
+
+  #aeps_section{
+    width: 100%;
+    min-height: 45vh;
+    height: fit-content;
+    background-color: var(--color-one-light);
+    .content{
+      width: 90%;
+margin: auto;
+      height: 100%;
+      text-align: center;
+      line-height: 2;
+      color: #626262;
+      @media  (max-width:600px){
+  
+     font-size: 0.8rem;
+     line-height: 1.5;
+     b{
+        font-size: 1rem;
+      
+      
+     }
+      }
+      b{
+        font-size: 1.5rem;
+        color: var(--color-two);
+        font-weight: 500;
+        text-align: center;
+        margin: 1rem auto;
+      }
+      p{
+
+      }
+      button{
+        width:50%;
+        background-color: var(--color-two);
+        height: 2rem;
+        border: none;
+        border-radius: 3rem;
+        color: #fff;
+        font-size: 1rem;
+        font-weight: 500;
+        cursor: pointer;
+        transition: .3s;
+        margin:1rem auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &:hover{
+          transform: scale(1.1);
+        }
+        img{
+          width: 1.5rem;
+          height: 1.5rem;
+          margin-right: 10px;
+          border-radius: 50%;
+        }
+@media  (max-width:600px){
+  font-size: 0.8rem;
+    width: 90%;
+  }
+      }
+    }
+  }
+  #video_section{
+width: 100%;
+margin: auto;
+height: 90vh;
+height: fit-content;
+video{
+  width: 100%;
+  height: 100%;
+  muted: true;
+}
+
+
+  }
+  #services{
+    width: 100%;
+    min-height: 70vh;
+    height: fit-content;
+    background-color: var(--color-four);
+  ;
+    .cards{
+      padding: 4rem;
+      width: 80%;
+      margin: auto;
+      height: fit-content;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap:6rem;
+     
+  .card{
+    // width: 30%;
+    width: 15rem;
+    height: 15rem;
+    border-radius: 0.6rem;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    font-size: 0.8rem;
+    padding: 1rem;
+    gap:1rem;
+    img{
+      width: 3rem;
+      height: 3rem;
+    }
+    p{
+      text-align: center;
+    }
+  }
+
+  @media  (max-width:600px){
+    width: 100%;
+    padding: 2rem 0.5rem;
+    gap:1rem;
+    .card{
+      // width: 30%;
+      width: 11rem;
+      height: 11rem;
+      border-radius: 0.4rem;
+      font-size: 0.6rem;
+      padding: 1rem;
+      gap:1rem;
+      img{
+        width: 3rem;
+        height: 3rem;
+      }
+      p{
+        text-align: center;
+      }
+    }
+  }
+    }
+  }
+  #banking{
+    width: 100%;
+    height: fit-content;
+    max-height: 90vh;
+    display: flex;
+    gap:5%;
+    // flex-wrap: wrap;
+ 
+    .cont1{
+      width: 35%;
+      img{
+        width: 100%;
+        height: 100%;
+        margin:2rem auto;
+      }
+    }
+    .cont2{
+      width: 70%;
+      margin: auto;
+      height: 95%;
+display: flex;
+flex-direction: column;
+padding: 2rem 5rem;
+h4{
+  margin: 0;
+  width: 70%;
+  font-size: 2.5rem;
+  padding: 2rem;
+  b{
+    color: var(--color-two);
+  }
+}
+.part{
+  width: 90%;
+  margin:1rem  auto;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap:1rem;
+    img{
+      width: 3rem;
+      height: 3rem;
+    }
+    p{
+    }
+  
+}
+.mobile_img{
+  width: 100%;
+  height:fit-content;
+ margin: 1rem 0;
+  display: none;
+  // padding: 3rem;
+  @media (max-width:766px){
+    display: block;
+
+  }
+  img{
+    width: 90%;
+    height: 100%;
+    margin-left: 10%;
+  }
+}
+
+    }
+    @media (max-width:999px){
+     gap:0;
+      .cont1{
+        width: 40%;
+
+        
+      }
+      .cont2{
+        width: 60%;
+        height: 70%;
+        padding: 0;
+        margin: auto;
+        h4{
+          width: 100%;
+        }
+      }
+    }
+    @media (max-width:766px){
+      gap:0;
+      flex-direction: column;
+       .cont1{
+         width: 100%;
+ display: none;
+         
+       }
+       .cont2{
+         width: 100%;
+         height: 100%;
+         padding: 0;
+         margin: auto;
+         h4{
+           font-size: 1.8rem;
+           width: 90%;
+           padding:1rem 0;
+           margin:0 auto ;
+           text-align: center;
+         }
+         .part{
+          display: none;
+         }
+       }
+     }
+  }
