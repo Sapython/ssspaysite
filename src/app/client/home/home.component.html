@@ -2,22 +2,22 @@
   <button class="menu" (click)="tooglebar()">
     <i class="ri-menu-2-fill"></i>
   </button>
-  <img class="logo" src="/assets/it_logo 1.png" alt="" />
+  <img  uk-scrollspy="cls: uk-animation-slide-left; repeat: true" class="logo" src="/assets/it_logo 1.png" alt="" />
 
   <div class="top-nav nav-links">
-    <ul>
+    <ul uk-grid uk-scrollspy="cls: uk-animation-fade; target: .uk-card; delay: 500; repeat: true">
       <li><a href="#">Home</a></li>
       <li><a href="#">Services</a></li>
       <li><a href="#">Appointments</a></li>
       <li><a href="#">About us</a></li>
     </ul>
   </div>
-  <div class="buttons">
+  <div class="buttons" uk-scrollspy="cls: uk-animation-slide-right; repeat: true">
     <button class="btn">Sign IN</button>
     <button class="btn start">Get Started</button>
   </div>
 </header>
-<aside *ngIf="bar">
+<div *ngIf="bar">
   <header>
     <div class="one">
       <img src="https://i.pravatar.cc/300" alt="" />
@@ -51,33 +51,36 @@
       <span>Log Out</span>
     </li>
   </ul>
-</aside>
+</div>
 <section id="section-1">
-  <div class="container1">
-    <span> <b> BBPS </b> Solutions,</span>
-    <br />
-    <span> <b> Bill </b> Payments,</span>
-    <br />
-    <span> <b> AEPS </b> Services</span>
+  <div class="container1" >
+  
+
+      <span  uk-scrollspy="cls: uk-animation-slide-left; repeat: true"> <b> BBPS </b> Solutions,</span>
+      <br />
+      <span  uk-scrollspy="cls: uk-animation-slide-right; repeat: true"> <b > Bill </b> Payments,</span>
+      <br />
+      <span  uk-scrollspy="cls: uk-animation-slide-left; repeat: true"> <b> AEPS </b> Services</span>
+    
 
     <br />
-    <p>Fastest Banking Services with best price!</p>
+    <p  uk-scrollspy="cls: uk-animation-slide-left; repeat: true">Fastest Banking Services with best price!</p>
 
     <br />
-    <div class="notify active">
+    <div class="notify active" uk-grid uk-scrollspy="cls: uk-animation-fade; target: .uk-card; delay: 500; repeat: true">
       <input type="text" />
       <button>Notify Me</button>
     </div>
-    <div class="version">
+    <div class="version" >
       <button>Beta</button>
       Launcing V1.0 in
     </div>
   </div>
-  <div class="conatiner2">
+  <div class="conatiner2"  uk-scrollspy="cls: uk-animation-slide-right; repeat: true">
     <img src="/assets/image1.svg" />
   </div>
 </section>
-<section id="section-2">
+<section id="section-2" uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
   <img src="../../../assets/image2.svg" alt="" />
 </section>
 
@@ -86,7 +89,7 @@
     All kinds of payment services <br />
     in <b>SSS</b> pay
   </p>
-  <div class="card1">
+  <div class="card1"  uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
     <div class="imgg">
       <img src="/assets/Group 13 10.png" alt="" />
     </div>
@@ -99,7 +102,7 @@
     </div>
   </div>
 
-  <div class="card1">
+  <div class="card1"  uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
     <div class="imgg">
       <img src="/assets/Group 7 10.png" alt="" />
     </div>
@@ -108,7 +111,7 @@
       <p>Easy bill payment through UPI Plateforms</p>
     </div>
   </div>
-  <div class="card1">
+  <div class="card1"  uk-scrollspy="cls: uk-animation-slide-right; repeat: true">
     <div class="imgg">
       <img src="/assets/img121.png" alt="" />
     </div>
@@ -117,7 +120,7 @@
       <p>Mobile | DTH | Data Card | Bill Payment</p>
     </div>
   </div>
-  <div class="card1">
+  <div class="card1"  uk-scrollspy="cls: uk-animation-slide-right; repeat: true">
     <div class="imgg">
       <img src="/assets/img333.png" alt="" />
     </div>
@@ -130,7 +133,7 @@
 
 <section class="sec5">
   <div class="left-container1">
-    <h2 class="txtxt">
+    <h2 class="txtxt"  uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
       One-stop solution for <span class="c-txt">your business</span> growth in
       this digital era.
     </h2>
@@ -183,7 +186,7 @@
 </section>
 <section id="video_section">
   <video autoplay loop controls>
-    <source src="/assets/ssspaylanding.mp4"  type="video/mp4" />
+    <!-- <source src="/assets/ssspaylanding.mp4"  type="video/mp4" /> -->
   </video>
 </section>
 <div id="services">

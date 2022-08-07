@@ -13,6 +13,7 @@ import { HomeComponent } from './home/home.component';
   imports: [
     CommonModule,
     ClientRoutingModule,
+    BrowserModule
   ]
 })
 export class ClientModule { }
