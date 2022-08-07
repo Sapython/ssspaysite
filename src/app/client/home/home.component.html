@@ -12,10 +12,12 @@
         <li><a href="#">About us</a></li>
       </ul>
     </div>
-    <div class="buttons" uk-scrollspy="cls: uk-animation-slide-right; repeat: true">
-      <button class="btn" routerLink="/signup">Sign IN</button>
-      <button class="btn start">Get Started</button>
+    <div class="buttons"   uk-scrollspy="cls: uk-animation-slide-right; repeat: true">
+      <button class="btn "  *ngIf="!dataprovider.loggedIn"  routerLink="/login">Sign IN</button>
+      <button class="btn start" *ngIf="!dataprovider.loggedIn"  routerLink="/signup">Get Started</button>
+      <button class="btn " *ngIf="dataprovider.loggedIn" (click)="signuOut()">Sign Out</button>
     </div>
+    
   </header>
   <aside *ngIf="bar" uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
     <header>

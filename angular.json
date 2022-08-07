@@ -102,6 +102,16 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "ssspaysite:build:production",
+            "firebaseProject": "ssspay-prod",
+            "firebaseHostingSite": "ssspay"
+          }
         }
       }
     }

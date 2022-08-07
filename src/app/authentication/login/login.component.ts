@@ -7,7 +7,7 @@ import { AlertsAndNotificationsService } from 'src/app/services/uiService/alerts
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
-  styleUrls: ['./login.component.scss']
+  styleUrls: ['./login.component.scss'],
 })
 export class LoginComponent implements OnInit {
   loginForm: FormGroup = new FormGroup({
@@ -18,25 +18,32 @@ export class LoginComponent implements OnInit {
       Validators.minLength(10),
     ]),
   });
-  checked:boolean = false;
-  constructor(private authService:AuthenticationService,private alertify: AlertsAndNotificationsService,public dataProvider:DataProvider) { }
+  checked: boolean = false;
+  constructor(
+    private authService: AuthenticationService,
+    private alertify: AlertsAndNotificationsService,
+    public dataProvider: DataProvider
+  ) {}
 
   ngOnInit(): void {
-    this.authService.user.subscribe((user)=>{
+    this.authService.user.subscribe((user) => {
       this.checked = true;
-    })
+    });
   }
-  login(){
+  login() {
     if (this.loginForm.valid) {
       this.authService.loginEmailPassword(
         this.loginForm.value.email,
-        this.loginForm.value.password,
+        this.loginForm.value.password
       );
     } else {
-      this.alertify.presentToast('Please fill all the fields correctly','info');
+      this.alertify.presentToast(
+        'Please fill all the fields correctly',
+        'info'
+      );
     }
   }
-  googleSSO(){
+  googleSSO() {
     this.authService.signInWithGoogle();
   }
 }

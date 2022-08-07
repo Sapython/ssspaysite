@@ -83,6 +83,7 @@ export class AuthenticationService {
     let data = signInWithPopup(this.auth, new GoogleAuthProvider())
       .then(async (credentials: UserCredential) => {
         await this.userData.setUserData(credentials.user);
+        this.router.navigate(['/']);
       })
       .catch((error) => {
         this.dataProvider.pageSetting.blur = false;

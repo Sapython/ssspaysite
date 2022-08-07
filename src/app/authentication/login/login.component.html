@@ -1,18 +1,21 @@
 <section>
     <div class="signup_details">
-      <form  >
+ 
+      <img  class="logo" src="../../../assets/ssspay.svg" alt="ss">
+   
+      <form class="form" [formGroup]="loginForm" (ngSubmit)="login()">
         <b>Login</b>
         <div class="input_conatiner">
           <label>Email</label>
-          <input type="email"   />
+          <input type="email" formControlName="email"  />
         </div>
         <div class="input_conatiner">
           <label>Password</label>
-          <input type="password" />
+          <input type="password" formControlName="password" />
         </div>
         <div class="authentication">
           <button type="submit">Signup</button>
-          <button type="button" class="google"><img src="../../../assets/google.svg">
+          <button (click)="googleSSO()" type="button" class="google"><i style="color:white;font-size:1.5rem;" class="ri-google-fill"></i>
             <p>Continue with google</p>
           </button>
         </div>
@@ -21,11 +24,11 @@
           <p routerLink="../signup">Signup</p>
         </span>
       </form>
-      <div class="loader" >
-        <!-- <mat-spinner></mat-spinner> -->
+      <div class="loader" *ngIf="!checked">
+        <mat-spinner></mat-spinner>
         <h2>Checking for your login info</h2>
       </div>
-      <div  class="loader">
+      <div *ngIf="checked && dataProvider.loggedIn" class="loader">
         <p>You are already logged in.</p>
         <button routerLink="">
           <p>Continue to Admin Panel</p>

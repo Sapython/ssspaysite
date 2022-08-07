@@ -23,7 +23,7 @@ const routes: Routes = [
   {
     path: 'forgotpassword',
     loadChildren: () =>
-      import('./authentication/forgotpassword/forgotpassword.module').then(
+      import('./authentication/login/forgotpassword/forgotpassword.module').then(
         (m) => m.ForgotpasswordModule
       ),
   },
