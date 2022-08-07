@@ -1,0 +1,34 @@
+<section>
+  <div class="signup_details">
+    <form [formGroup]="signupForm" (ngSubmit)="signup()">
+      <b>Signup</b>
+      <div class="input_conatiner">
+        <label>Name</label>
+        <input formControlName="name" type="text" placeholder="Full Name" />
+      </div>
+      <div class="input_conatiner">
+        <label>Email</label>
+        <input type="email" formControlName="email" placeholder="username@host.com" />
+      </div>
+      <div class="input_conatiner">
+        <label>Password</label>
+        <input type="password" formControlName="password" placeholder="Password" />
+      </div>
+      <div class="input_conatiner">
+        <label>Confirm Password</label>
+        <input type="password" formControlName="confirmPassword" placeholder="Confirm Password" />
+      </div>
+      <div class="authentication">
+        <button type="submit">Signup</button>
+        <button (click)="googleSSO()" type="button" class="google"><img src="../../../assets/google.svg">
+          <p>Continue with google</p>
+        </button>
+      </div>
+      <span>
+        Already have account?
+        <p routerLink="/login">Login</p>
+      </span>
+    </form>
+  </div>
+  <img src="../../../assets/signup.png" />
+</section>

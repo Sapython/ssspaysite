@@ -1,0 +1,36 @@
+<section>
+    <div class="signup_details">
+      <form  >
+        <b>Login</b>
+        <div class="input_conatiner">
+          <label>Email</label>
+          <input type="email"   />
+        </div>
+        <div class="input_conatiner">
+          <label>Password</label>
+          <input type="password" />
+        </div>
+        <div class="authentication">
+          <button type="submit">Signup</button>
+          <button type="button" class="google"><img src="../../../assets/google.svg">
+            <p>Continue with google</p>
+          </button>
+        </div>
+        <span>
+          Don't have an account?
+          <p routerLink="../signup">Signup</p>
+        </span>
+      </form>
+      <div class="loader" >
+        <!-- <mat-spinner></mat-spinner> -->
+        <h2>Checking for your login info</h2>
+      </div>
+      <div  class="loader">
+        <p>You are already logged in.</p>
+        <button routerLink="">
+          <p>Continue to Admin Panel</p>
+        </button>
+      </div>
+    </div>
+    <img src="../../../assets/signup.png" />
+  </section>
