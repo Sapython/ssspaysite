@@ -1,440 +1,432 @@
-<header class="heading nav">
-    <button class="menu" (click)="tooglebar()">
-      <i class="ri-menu-2-fill"></i> 
-    </button>
-    <img uk-scrollspy="cls: uk-animation-slide-left; repeat: true" class="logo" src="/assets/it_logo 1.png" alt="" />
-  
-    <div class="top-nav nav-links" >
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Appointments</a></li>
-        <li><a href="#">About us</a></li>
-      </ul>
-    </div>
-    <div class="buttons"   uk-scrollspy="cls: uk-animation-slide-right; repeat: true">
-      <button class="btn "  *ngIf="!dataprovider.loggedIn"  routerLink="/login">Sign IN</button>
-      <button class="btn start" *ngIf="!dataprovider.loggedIn"  routerLink="/signup">Get Started</button>
-      <button class="btn " *ngIf="dataprovider.loggedIn" (click)="signuOut()">Sign Out</button>
-    </div>
-    
-  </header>
-  <aside *ngIf="bar" uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
-    <header>
-      <div class="one">
-        <img src="https://i.pravatar.cc/300" alt="" />
-        <h3>
-          Sachin Pandey
-          <br />
-          pravakar@gmail.com
-        </h3>
-      </div>
-      <i class="ri-close-fill" (click)="tooglebar()"></i>
-    </header>
-    <ul>
-      <li>
-        <i class="ri-home-2-line"></i>
-        <span>Home</span>
-      </li>
-      <li>
-        <i class="ri-customer-service-fill"></i>
-        <span>Service</span>
-      </li>
-      <li>
-        <i class="ri-task-line"></i>
-        <span>Appointment</span>
-      </li>
-      <li>
-        <i class="ri-discuss-line"></i>
-        <span>About us</span>
-      </li>
-      <li>
-        <i class="ri-logout-box-r-line"></i>
-        <span>Log Out</span>
-      </li>
-    </ul>
-  </aside>
-  <section id="section-1">
-    <div class="container1">
-      <span uk-scrollspy="cls: uk-animation-slide-left; repeat: true"> <b> BBPS </b> Solutions,</span>
-      <br />
-      <span uk-scrollspy="cls: uk-animation-slide-right; repeat: true"> <b> Bill </b> Payments,</span>
-      <br />
-      <span uk-scrollspy="cls: uk-animation-slide-left; repeat: true"> <b> AEPS </b> Services</span>
-  
-      <br />
-      <p uk-scrollspy="cls: uk-animation-slide-right; repeat: true">Fastest Banking Services with best price!</p>
-  
-      <br />
-      <div class="notify active">
-        <input type="text" />
-        <button>Notify Me</button>
-      </div>
-      <div class="version">
-        <button>Beta</button>
-        Launcing V1.0 in
-      </div>
-    </div>
-    <div class="conatiner2" uk-scrollspy="cls: uk-animation-slide-right; repeat: true">
-      <img src="/assets/image1.svg" />
-    </div>
-  </section>
-  <section id="section-2" uk-scrollspy="cls:uk-animation-fade">
-    <img src="../../../assets/image2.svg" alt="" />
-  </section>
-  
-  <section class="sec4">
-    <p class="card_header">
-      All kinds of payment services <br />
-      in <b>SSS</b> pay
+<app-header></app-header>
+<section id="section-1">
+  <div class="container1">
+    <span uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
+      <b> BBPS </b> Solutions,</span
+    >
+    <br />
+    <span uk-scrollspy="cls: uk-animation-slide-right; repeat: true">
+      <b> Bill </b> Payments,</span
+    >
+    <br />
+    <span uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
+      <b> AEPS </b> Services</span
+    >
+
+    <br />
+    <p uk-scrollspy="cls: uk-animation-slide-right; repeat: true">
+      Fastest Banking Services with best price!
     </p>
-    <div class="card1" uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
-      <div class="imgg">
-        <img src="/assets/Group 13 10.png" alt="" />
-      </div>
-      <div class="txtt">
-        <h5>AEPS Service</h5>
-        <p>
-          Aadhaar Enabled Payment System is basically a new payment service
-          provided by the NPCI
-        </p>
-      </div>
+
+    <br />
+    <div class="notify active">
+      <input type="text" />
+      <button>Notify Me</button>
     </div>
-  
-    <div class="card1" uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
-      <div class="imgg">
-        <img src="/assets/Group 7 10.png" alt="" />
-      </div>
-      <div class="txtt">
-        <h5>Bill payment</h5>
-        <p>Easy bill payment through UPI Plateforms</p>
-      </div>
+    <div class="version">
+      <button>Beta</button>
+      Launcing V1.0 in
     </div>
-    <div class="card1" uk-scrollspy="cls: uk-animation-slide-right; repeat: true">
-      <div class="imgg">
-        <img src="/assets/img121.png" alt="" />
-      </div>
-      <div class="txtt">
-        <h5>Recharge</h5>
-        <p>Mobile | DTH | Data Card | Bill Payment</p>
-      </div>
+  </div>
+  <div
+    class="conatiner2"
+    uk-scrollspy="cls: uk-animation-slide-right; repeat: true"
+  >
+    <img src="/assets/image1.svg" />
+  </div>
+</section>
+<section id="section-2" uk-scrollspy="cls:uk-animation-fade">
+  <img src="../../../assets/image2.svg" alt="" />
+</section>
+
+<section id="aboutUs">
+  <p class="card_header">
+    All kinds of payment services <br />
+    in <b>SSS</b> pay
+  </p>
+  <div class="card1" uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
+    <div class="imgg">
+      <img src="/assets/Group 13 10.png" alt="" />
     </div>
-    <div class="card1" uk-scrollspy="cls: uk-animation-slide-right; repeat: true">
-      <div class="imgg" uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
-        <img src="/assets/img333.png" alt="" />
-      </div>
-      <div class="txtt" uk-scrollspy="cls: uk-animation-slide-left; repeat: true" >
-        <h5>BBPS Services</h5>
-        <p>Welcome to ONE STOP ACCESS for all your bill payments</p>
-      </div>
-    </div>
-  </section>
-  
-  <section class="sec5">
-    <div class="left-container1" >
-      <h2 class="txtxt"uk-scrollspy="cls: uk-animation-slide-bottom;repeat: true">
-        One-stop solution for <span class="c-txt">your business</span> growth in
-        this digital era.
-      </h2>
-  
-      <button class="app-btn">
-        <p>App Service</p>
-        <img src="/assets/layers 2.png" />
-      </button>
-  
-      <div class="boxesss" uk-scrollspy="cls: uk-animation-slide-bottom; repeat: true" >
-        <p>Bus, Hotel, Flight & Train Booking</p>
-        <img src="/assets/tickets 2.png" alt="" />
-      </div>
-      <div class="boxesss" uk-scrollspy="cls: uk-animation-slide-bottom; repeat: true">
-        <p>Bus, Hotel, Flight & Train Booking</p>
-        <img src="/assets/mobile 1 2.png" alt="" />
-      </div>
-      <div class="boxesss" uk-scrollspy="cls: uk-animation-slide-bottom; repeat: true">
-        <p>Bus, Hotel, Flight & Train Booking</p>
-        <img src="/assets/mobile 1 3.png" alt="" />
-      </div>
-    </div>
-  
-    <div class="right-container1" uk-scrollspy="cls: uk-animation-slide-right; repeat: true">
-      <img class="p-img" src="/assets/main.svg" alt="" />
-    </div>
-    <div class="image-right">
-      <img src="../../../assets/digital_banking.svg" alt="" />
-    </div>
-  </section>
-  
-  <section id="aeps_section">
-    <div class="content" uk-scrollspy="cls:uk-animation-fade;repeat: true;">
-      <b>AEPS Services</b>
+    <div class="txtt">
+      <h5>AEPS Service</h5>
       <p>
-        Aadhaar Enabled Payment System also known as AEPS in short is basically a
-        new payment service provided by the NPCI to banks and financial companies
-        using ‘Aadhaar card’. Aadhaar is issued by UIDAI (Unique Identification
-        Authority of India). It is a unique identification number of every
-        indivIdual in India. AEPS API service can be used at CSPs (Customer
-        Service Points) maintained by some Business Correspondents (BCs) using POS
-        devices. Softcare Infotech is one of the best AEPS API service providers
-        that provide AEPS services across all over India.
+        Aadhaar Enabled Payment System is basically a new payment service
+        provided by the NPCI
       </p>
-      <button>
-        <img src="https://i.pravatar.cc/300" alt="" /> “SSS Pay is a dream come
-        true.”
+    </div>
+  </div>
+
+  <div class="card1" uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
+    <div class="imgg">
+      <img src="/assets/Group 7 10.png" alt="" />
+    </div>
+    <div class="txtt">
+      <h5>Bill payment</h5>
+      <p>Easy bill payment through UPI Plateforms</p>
+    </div>
+  </div>
+  <div class="card1" uk-scrollspy="cls: uk-animation-slide-right; repeat: true">
+    <div class="imgg">
+      <img src="/assets/img121.png" alt="" />
+    </div>
+    <div class="txtt">
+      <h5>Recharge</h5>
+      <p>Mobile | DTH | Data Card | Bill Payment</p>
+    </div>
+  </div>
+  <div class="card1" uk-scrollspy="cls: uk-animation-slide-right; repeat: true">
+    <div class="imgg" uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
+      <img src="/assets/img333.png" alt="" />
+    </div>
+    <div class="txtt" uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
+      <h5>BBPS Services</h5>
+      <p>Welcome to ONE STOP ACCESS for all your bill payments</p>
+    </div>
+  </div>
+</section>
+
+<section class="sec5">
+  <div class="left-container1">
+    <h2
+      class="txtxt"
+      uk-scrollspy="cls: uk-animation-slide-bottom;repeat: true"
+    >
+      One-stop solution for <span class="c-txt">your business</span> growth in
+      this digital era.
+    </h2>
+
+    <button class="app-btn">
+      <p>App Service</p>
+      <img src="/assets/layers 2.png" />
+    </button>
+
+    <div
+      class="boxesss"
+      uk-scrollspy="cls: uk-animation-slide-bottom; repeat: true"
+    >
+      <p>Bus, Hotel, Flight & Train Booking</p>
+      <img src="/assets/tickets 2.png" alt="" />
+    </div>
+    <div
+      class="boxesss"
+      uk-scrollspy="cls: uk-animation-slide-bottom; repeat: true"
+    >
+      <p>Bus, Hotel, Flight & Train Booking</p>
+      <img src="/assets/mobile 1 2.png" alt="" />
+    </div>
+    <div
+      class="boxesss"
+      uk-scrollspy="cls: uk-animation-slide-bottom; repeat: true"
+    >
+      <p>Bus, Hotel, Flight & Train Booking</p>
+      <img src="/assets/mobile 1 3.png" alt="" />
+    </div>
+  </div>
+
+  <div
+    class="right-container1"
+    uk-scrollspy="cls: uk-animation-slide-right; repeat: true"
+  >
+    <img class="p-img" src="/assets/main.svg" alt="" />
+  </div>
+  <div class="image-right">
+    <img src="../../../assets/digital_banking.svg" alt="" />
+  </div>
+</section>
+
+<section id="aeps_section">
+  <div class="content" uk-scrollspy="cls:uk-animation-fade;repeat: true;">
+    <b>AEPS Services</b>
+    <p>
+      Aadhaar Enabled Payment System also known as AEPS in short is basically a
+      new payment service provided by the NPCI to banks and financial companies
+      using ‘Aadhaar card’. Aadhaar is issued by UIDAI (Unique Identification
+      Authority of India). It is a unique identification number of every
+      indivIdual in India. AEPS API service can be used at CSPs (Customer
+      Service Points) maintained by some Business Correspondents (BCs) using POS
+      devices. Softcare Infotech is one of the best AEPS API service providers
+      that provide AEPS services across all over India.
+    </p>
+    <button>
+      <img src="https://i.pravatar.cc/300" alt="" /> “SSS Pay is a dream come
+      true.”
+    </button>
+  </div>
+</section>
+<section id="video_section">
+  <video autoplay loop controls>
+    <!-- <source src="/assets/ssspaylanding.mp4"  type="video/mp4" /> -->
+  </video>
+</section>
+<div id="services">
+  <div class="cards">
+    <div class="card" uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
+      <img src="../../../assets/service1.svg" alt="" />
+      <h3>Fast service</h3>
+
+      <p>
+        We assure you for fastest services that we committed for best solution
+        in market.
+      </p>
+    </div>
+    <div class="card" uk-scrollspy="cls:uk-animation-fade; repeat: true">
+      <img src="../../../assets/service2.svg" alt="" />
+      <h3>Protected service</h3>
+
+      <p>
+        We provides top payment services to our merchants for boost their
+        transaction.
+      </p>
+    </div>
+    <div
+      class="card"
+      uk-scrollspy="cls: uk-animation-slide-right; repeat: true"
+    >
+      <img src="../../../assets/service3.svg" alt="" />
+      <h3>Expert team</h3>
+
+      <p>
+        We have top most dedveloper in our team to monitor issues in our panel
+        to support our merchant.
+      </p>
+    </div>
+    <div class="card" uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
+      <img src="../../../assets/service4.svg" alt="" />
+      <h3>Supports</h3>
+      <p>We assure 24/7 supports in services and solution to our merchants.</p>
+    </div>
+    <div
+      class="card"
+      uk-scrollspy="cls:uk-animation-fade; repeat: true"
+    >
+      <img src="../../../assets/service5.svg" alt="" />
+      <h3>Affordable services</h3>
+      <p>
+        We provides affordable services in comparison to other company which
+        lies in markets.
+      </p>
+    </div>
+    <div
+      class="card"
+      uk-scrollspy="cls: uk-animation-slide-right; repeat: true"
+    >
+      <img src="../../../assets/service6.svg" alt="" />
+      <h3>Security & Privacy</h3>
+      <p>We keep your data safe and secure.</p>
+    </div>
+  </div>
+</div>
+<div id="banking">
+  <div class="cont1" uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
+    <img
+      uk-scrollspy="cls: uk-animation-slide-right; repeat: true"
+      src="../../../assets/onlinebanking.svg"
+      alt=""
+    />
+  </div>
+  <div
+    class="cont2"
+    uk-scrollspy="cls: uk-animation-slide-bottom; repeat: true"
+  >
+    <h4>
+      Easy and effective way to get <b>Online Banking </b>
+      Services.
+    </h4>
+    <div class="mobile_img">
+      <img src="../../../assets/mobile-banking.svg" alt="" />
+    </div>
+    <div class="part">
+      <img src="../../../assets/software.svg" alt="" />
+      <p>
+        122
+        <br />
+        <b>Software Development</b>
+      </p>
+    </div>
+    <div class="part">
+      <img src="../../../assets/happy.svg" alt="" />
+      <p>
+        300
+        <br />
+        <b>Happy Merchants</b>
+      </p>
+    </div>
+    <div class="part">
+      <img src="../../../assets/sollution.svg" alt="" />
+      <p>
+        422
+        <br />
+        <b>Complete Solution</b>
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- sectionnnnnnnnnnnnnnnnnnnnnnnnnn................................  -->
+
+<section class="container441">
+  <div class="left">
+    <h2>
+      Aadhar Enabled Payment <br />
+      services
+    </h2>
+    <p uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
+      Aadhaar Enabled Payment System (AEPsS) is a sort of installment framework
+      that depends on the Unique Identifsication Number and permits Aadhaar card
+      holders to consistently make money related exchanges .
+    </p>
+
+    <div uk-scrollspy="cls: uk-animation-slide-left; repeat: true" class="desc">
+      <button style="background-color: rgba(128, 253, 224, 0.851)">
+        Design
+      </button>
+      <p>22 Aug</p>
+    </div>
+  </div>
+  <div
+    class="right_image"
+    uk-scrollspy="cls: uk-animation-slide-right; repeat: true"
+  >
+    <img class="error" src="../../../assets/banknew.svg" alt="" />
+  </div>
+</section>
+<section class="container441 rev">
+  <div
+    class="right_image"
+    uk-scrollspy="cls: uk-animation-slide-left; repeat: true"
+  >
+    <img src="../../../assets/banknew2.svg" alt="" />
+  </div>
+  <div class="left">
+    <h2>POS - Point of Sale</h2>
+    <p uk-scrollspy="cls: uk-animation-slide-right; repeat: true">
+      We have a solid arrangement of POS administrations, which enables clients
+      to effectively pick and pick the coveted administrations for meeting their
+      business destinations. With POS arrangement.
+    </p>
+    <div
+      uk-scrollspy="cls: uk-animation-slide-right; repeat: true"
+      class="desc"
+    >
+      <button style="background-color: rgba(252, 150, 62, 0.851)">
+        Design
+      </button>
+      <p>22 Aug</p>
+    </div>
+  </div>
+</section>
+<section class="container441">
+  <div class="left">
+    <h2>Reseller Facility</h2>
+    <p uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
+      Our platform features are engineered following your knowledge we garnered
+      from users making our interface user-friendly and user-friendly.
+      Simplifying lives while increasing productivity is the motto we followed
+      while deciding the platforms Apna Recharge must encompass. The involvement
+      and talent we've put in making these platforms are sole to produce life
+      simpler.
+    </p>
+    <div uk-scrollspy="cls: uk-animation-slide-left; repeat: true" class="desc">
+      <button style="background-color: rgba(245, 186, 229, 0.851)">
+        Design
+      </button>
+      <p>12 March</p>
+    </div>
+  </div>
+  <div
+    class="right_image"
+    uk-scrollspy="cls: uk-animation-slide-right; repeat: true"
+  >
+    <img src="../../../assets/banknew3.svg" alt="" />
+  </div>
+</section>
+
+<section class="customers">
+  <div class="container">
+    <!-- <img src="assets/bacc.png" alt=""> -->
+    <p id="heading">Customer are lovin’it</p>
+    <p id="height" uk-scrollspy="cls: uk-animation-fade; repeat: true">
+      Here are testimonials from clients.
+    </p>
+    <p id="medium" uk-scrollspy="cls: uk-animation-fade; repeat: true">
+      <i class="ri-double-quotes-l quote"></i>
+      I am really satisfied with your utility service.Thanks for your kind
+      information You and your team provide us a very good platform were we get
+      the services fast which is very beneficial for us.
+    </p>
+
+    <h5 class="user" uk-scrollspy="cls: uk-animation-fade; repeat: true">
+      ~
+      <img src="https://ssspay.in/Website/images/it_service/client3.jpeg" alt="" />
+      <b>Dalbir</b>
+    </h5>
+  </div>
+  <div class="download">
+    <p id="big">You can get it right now</p>
+    <div class="buttons">
+      <button uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
+        <img src="../../../assets/play_store.svg" alt="" />
+        <div>
+          <p>Get it On</p>
+          <p>Google Play</p>
+        </div>
+      </button>
+      <button uk-scrollspy="cls: uk-animation-slide-right; repeat: true">
+        <i class="ri-apple-fill"></i>
+        <div>
+          <p>Download On the</p>
+          <p>App Store</p>
+        </div>
       </button>
     </div>
-  </section>
-  <section id="video_section">
-    <video autoplay loop controls>
-      <!-- <source src="/assets/ssspaylanding.mp4"  type="video/mp4" /> -->
-    </video>
-  </section>
-  <div id="services">
-    <div class="cards">
-      <div class="card"  uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
-        <img src="../../../assets/service1.svg" alt="" />
-        <h3>Fast service</h3>
-  
-        <p>
-          We assure you for fastest services that we committed for best solution
-          in market.
-        </p>
-      </div>
-      <div class="card"  uk-scrollspy="cls: uk-animation-slide-top; repeat: true">
-        <img src="../../../assets/service2.svg" alt="" />
-        <h3>Protected service</h3>
-  
-        <p>
-          We provides top payment services to our merchants for boost their
-          transaction.
-        </p>
-      </div>
-      <div class="card"  uk-scrollspy="cls: uk-animation-slide-right; repeat: true">
-        <img src="../../../assets/service3.svg" alt="" />
-        <h3>Expert team</h3>
-  
-        <p>
-          We have top most dedveloper in our team to monitor issues in our panel
-          to support our merchant.
-        </p>
-      </div>
-      <div class="card"  uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
-        <img src="../../../assets/service4.svg" alt="" />
-        <h3>Supports</h3>
-        <p>We assure 24/7 supports in services and solution to our merchants.</p>
-      </div>
-      <div class="card"  uk-scrollspy="cls: uk-animation-slide-bottom; repeat: true">
-        <img src="../../../assets/service5.svg" alt="" />
-        <h3>Affordable services</h3>
-        <p>
-          We provides affordable services in comparison to other company which
-          lies in markets.
-        </p>
-      </div>
-      <div class="card"  uk-scrollspy="cls: uk-animation-slide-right; repeat: true">
-        <img src="../../../assets/service6.svg" alt="" />
-        <h3>Security & Privacy</h3>
-        <p>We keep your data safe and secure.</p>
-      </div>
+    <p id="down" uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
+      Currenlty our app is in development but join our newsletter to test out
+      our early release.
+    </p>
+    <div
+      class="download_image"
+      uk-scrollspy="cls: uk-animation-slide-right; repeat: true"
+    >
+      <img src="../../../assets/download_app.svg" alt="" />
     </div>
   </div>
-  <div id="banking">
-    <div class="cont1"  uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
-      <img  uk-scrollspy="cls: uk-animation-slide-right; repeat: true" src="../../../assets/onlinebanking.svg" alt="" />
-    </div>
-    <div class="cont2"  uk-scrollspy="cls: uk-animation-slide-bottom; repeat: true">
-      <h4>
-        Easy and effective way to get <b>Online Banking </b>
-        Services.
-      </h4>
-      <div class="mobile_img">
-        <img src="../../../assets/mobile-banking.svg" alt="" />
-      </div>
-      <div class="part">
-        <img src="../../../assets/software.svg" alt="" />
-        <p>
-          122
-          <br />
-          <b>Software Development</b>
-        </p>
-      </div>
-      <div class="part">
-        <img src="../../../assets/happy.svg" alt="" />
-        <p>
-          300
-          <br />
-          <b>Happy Merchants</b>
-        </p>
-      </div>
-      <div class="part">
-        <img src="../../../assets/sollution.svg" alt="" />
-        <p>
-          422
-          <br />
-          <b>Complete Solution</b>
-        </p>
-      </div>
-    </div>
-  </div>
-  
-  <!-- sectionnnnnnnnnnnnnnnnnnnnnnnnnn................................  -->
-  
-  <section class="container441">
-    <div class="left"  >
-      <h2>
-        Aadhar Enabled Payment <br />
-        services
-      </h2>
-      <p uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
-        Aadhaar Enabled Payment System (AEPsS) is a sort of installment framework
-        that depends on the Unique Identifsication Number and permits Aadhaar card
-        holders to consistently make money related exchanges .
-      </p>
-      
-      <div uk-scrollspy="cls: uk-animation-slide-left; repeat: true" class="desc">
-        <button style="background-color: rgba(128, 253, 224, 0.851);">Design</button>
-        <p>22 Aug</p>
-      </div>
-     
-    </div>
-    <div class="right_image"  uk-scrollspy="cls: uk-animation-slide-right; repeat: true">
-      <img  class="error"  src="../../../assets/banknew.svg" alt="" />
-    </div>
-  </section>
-  <section class="container441 rev">
-    <div class="right_image"  uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
-      <img src="../../../assets/banknew2.svg" alt="" />
-    </div>
-    <div class="left"  >
-      <h2>
-        POS - Point of Sale 
-      </h2>
-      <p uk-scrollspy="cls: uk-animation-slide-right; repeat: true">
-        We have a solid arrangement of POS administrations, which enables clients to effectively pick and pick the coveted administrations for meeting their business destinations. With POS arrangement. 
-      </p>
-      <div uk-scrollspy="cls: uk-animation-slide-right; repeat: true" class="desc">
-        <button style="background-color: rgba(252, 150, 62, 0.851);">Design</button>
-        <p>22 Aug</p>
-      </div>
-    </div>
-  </section>
-  <section class="container441">
-    <div class="left"  >
-      <h2>
-        Reseller Facility 
-       
-      </h2>
-      <p uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
-        Our platform features are engineered following your knowledge we garnered from users making our interface user-friendly and user-friendly. Simplifying lives while increasing productivity is the motto we followed while deciding the platforms Apna Recharge must encompass. The involvement and talent we've put in making these platforms are sole to produce life simpler. 
-      </p>
-      <div uk-scrollspy="cls: uk-animation-slide-left; repeat: true" class="desc">
-        <button style="background-color: rgba(245, 186, 229, 0.851);">Design</button>
-        <p>12 March</p>
-      </div>
-    </div>
-    <div class="right_image"  uk-scrollspy="cls: uk-animation-slide-right; repeat: true">
-      <img  src="../../../assets/banknew3.svg" alt="" />
-    </div>
-  </section>
-  
-  <section class="customers">
-    <div class="container">
-      <!-- <img src="assets/bacc.png" alt=""> -->
-      <p id="heading" >Customer are lovin’it</p>
-      <p id="height"  uk-scrollspy="cls: uk-animation-fade; repeat: true">Here are testimonials from clients.</p>
-      <p id="medium"  uk-scrollspy="cls: uk-animation-fade; repeat: true">
-        <i class="ri-double-quotes-l quote"></i>
-        Lorem Ipsum is simply dummy text of the printi- ng and typesetting
-        industry. Lorem Ipsum has been the industry's standard dummy text
-        eversince the 1500s, when an unknown printer took a galley of type and
-        scrambled it to make a type specimen book.
-      </p>
-    <h5 class="user"  uk-scrollspy="cls: uk-animation-fade; repeat: true">
-      ~ 
-      <img src="https://i.pravatar.cc/300" alt="" />
-      <b>John Doe</b>
-    </h5>
-    </div>
-    <div class="download">
-      <p id="big">You can grab it right now</p>
-      <div class="buttons">
-        <button uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
-        <img src="../../../assets/play_store.svg" alt="">
-          <div>
-            <p>Get it On</p>
-            <p>Google Play</p>
-          </div>
-        </button>
-        <button uk-scrollspy="cls: uk-animation-slide-right; repeat: true">
-          <i class="ri-apple-fill"></i>
-          <div>
-            <p>Download On the</p>
-            <p>App Store</p>
-          </div>
-        </button>
-      </div>
-        <p id="down" uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
-        Currenlty our app is in development but join our newsletter to test out
-        our early release.
-      </p>
-      <div class="download_image" uk-scrollspy="cls: uk-animation-slide-right; repeat: true">
-        <img src="../../../assets/download_app.svg" alt="">
-      </div>
-    </div>
-    <div class="get-in-touch">
-      <p id="heading">Get In Touch</p>
-      <P id="mobile"> Contact us and know how we are working and
-        how we can help you.</P>
-      <div class="parent-container">
-        <div class="parent-flex">
-          <div class="flex">
-            <input type="text" placeholder="Your Name" />
-            <input type="text" placeholder="Email" />
-          </div>
-          <div class="flex">
-            <input type="text" placeholder="Phone ( Optional)" />
-            <input type="text" placeholder="Company ( Optional)" />
-          </div>
+  <div class="get-in-touch">
+    <p id="heading">Get In Touch</p>
+    <P id="mobile">
+      Contact us and know how we are working and how we can help you.</P
+    >
+    <div class="parent-container">
+      <div class="parent-flex">
+        <div class="flex">
+          <input type="text" placeholder="Your Name" />
+          <input type="text" placeholder="Email" />
         </div>
-        <textarea cols="30" rows="5" placeholder="message"></textarea>
-        <button>Send Message</button>
+        <div class="flex">
+          <input type="text" placeholder="Phone ( Optional)" />
+          <input type="text" placeholder="Company ( Optional)" />
+        </div>
       </div>
-    </div>
-  </section>
-  <div class="contact">
-    <div class="box" uk-scrollspy="cls: uk-animation-slide-top; repeat: true">
-      <p>Email us</p>
-      <p>support@ssspay.in</p>
-    </div>
-    <div class="box" uk-scrollspy="cls: uk-animation-slide-top; repeat: true">
-      <p>Drop in</p>
-      <p style="margin: 0;">Purajagnnath sirsa, Sirsa Kachhar, Sirsa Meja, Prayagraj</p>
-    </div>
-    <div class="box" uk-scrollspy="cls: uk-animation-slide-top; repeat: true">
-      <p>Call any time</p>
-      <p>8601234556</p>
-      <p>9026269080</p>
+      <textarea cols="30" rows="5" placeholder="message"></textarea>
+      <button>Send Message</button>
     </div>
   </div>
-  <div class="footer">
-    <div class="flex">
-      <p>Pages</p>
-      <div class="icons">
-        <i class="ri-google-fill"></i>
-        <i class="ri-facebook-fill"></i>
-        <i class="ri-twitter-fill"></i>
-      </div>
-    </div>
-    <div class="li">
-      <p>Home</p>
-      <p>About us</p>
-      <p>Privacy Policy</p>
-      <p>Return And Refund</p>
-      <p>Term and Conditions</p>
-    </div>
-    <hr />
-    <p style="font-size:0.8rem; margin:0.3rem;">
-      © 2019 Page protected by reCAPTCHA and subject to Google's Privacy Policy
-      and Terms of Service
+</section>
+<div class="contact">
+  <div class="box" uk-scrollspy="cls: uk-animation-slide-top; repeat: true">
+    <p>Email us</p>
+    <p>support@ssspay.in</p>
+  </div>
+  <div class="box" uk-scrollspy="cls: uk-animation-slide-top; repeat: true">
+    <p>Drop in</p>
+    <p style="margin: 0">
+      Purajagnnath sirsa, Sirsa Kachhar, Sirsa Meja, Prayagraj
     </p>
   </div>
-  
+  <div class="box" uk-scrollspy="cls: uk-animation-slide-top; repeat: true">
+    <p>Call any time</p>
+    <p>8601234556</p>
+    <p>9026269080</p>
+  </div>
+</div>
+<app-footer></app-footer>

@@ -30,6 +30,9 @@ export class LoginComponent implements OnInit {
       this.checked = true;
     });
   }
+  log() {
+    console.log('vall');
+  }
   login() {
     if (this.loginForm.valid) {
       this.authService.loginEmailPassword(

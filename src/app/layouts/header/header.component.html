@@ -1,0 +1,73 @@
+<header class="heading nav">
+    <button class="menu" (click)="tooglebar()">
+      <i class="ri-menu-2-fill"></i>
+    </button>
+    <img
+      uk-scrollspy="cls: uk-animation-slide-left; repeat: true"
+      class="logo"
+      src="/assets/it_logo 1.png"
+      alt=""
+    />
+  
+    <div class="top-nav nav-links">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <!-- <li><a href="#">Appointments</a></li> -->
+        <li><a href="#aboutUs">About us</a></li>
+      </ul>
+    </div>
+    <div
+      class="buttons"
+      uk-scrollspy="cls: uk-animation-slide-right; repeat: true"
+    >
+      <button class="btn" *ngIf="!dataprovider.loggedIn" routerLink="/login">
+        Sign IN
+      </button>
+      <button
+        class="btn start"
+        *ngIf="!dataprovider.loggedIn"
+        routerLink="/signup"
+      >
+        Get Started
+      </button>
+      <button class="btn" *ngIf="dataprovider.loggedIn" (click)="signuOut()">
+        Sign Out
+      </button>
+    </div>
+  </header>
+  <aside *ngIf="bar" uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
+    <header>
+      <div class="one">
+        <img src="https://i.pravatar.cc/300" alt="" />
+        <h3>
+          Sachin Pandey
+          <br />
+          pravakar@gmail.com
+        </h3>
+      </div>
+      <i class="ri-close-fill" (click)="tooglebar()"></i>
+    </header>
+    <ul>
+      <li routerLink="/">
+        <i class="ri-home-2-line"></i>
+        <span >Home</span>
+      </li>
+      <li routerLink="/#services">
+        <i class="ri-customer-service-fill"></i>
+        <span >Service</span>
+      </li>
+      <!-- <li>
+        <i class="ri-task-line"></i>
+        <span>Appointment</span>
+      </li> -->
+      <li routerLink="/#aboutUs">
+        <i class="ri-discuss-line"></i>
+        <span>About us</span>
+      </li>
+      <li routerLink="/login">
+        <i class="ri-logout-box-r-line"></i>
+        <span>Log Out</span>
+      </li>
+    </ul>
+  </aside>

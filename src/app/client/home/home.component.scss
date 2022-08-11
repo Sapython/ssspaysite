@@ -5,106 +5,7 @@
     box-sizing: border-box;
   }
   
-  .heading {
-    margin: 0;
-    border-bottom: 1px solid black;
-    box-sizing: border-box;
-    height: 4rem;
-    width: 100%;
-    padding: 0 4rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    .menu {
-      font-size: 1.4rem;
-      border: none;
-      color: var(--color-two);
-      background-color: transparent;
-      display: none;
-      @media (max-width: 768px) {
-        display: block;
-      }
-    }
-    @media (max-width: 999px) {
-      padding: 0 1rem;
-    }
-    @media (max-width: 768px) {
-    }
-  }
-  
-  .logo {
-    width: 8rem;
-    //   display: inline-block;
-    @media (max-width: 768px) {
-      width: 7rem;
-      margin-left: 2rem;
-    }
-  }
-  
-  .top-nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    ul {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 3rem;
-      li {
-        list-style-type: none;
-        text-decoration: none;
-        font-size: 1.1rem;
-        a {
-          text-decoration: none;
-          color: black;
-        }
-      }
-      @media (max-width: 999px) {
-        li {
-          font-size: 0.9rem;
-        }
-        gap: 2rem;
-      }
-    }
-    @media (max-width: 768px) {
-      display: none;
-    }
-  }
-  
-  .btn {
-    background: #efefef;
-    border-radius: 0.7rem;
-    border: none;
-    padding: 0.5em 2em;
-    cursor: pointer;
-    transition: 0.3s;
-    color: var(--color-two);
-    margin-left: 1rem;
-    &:hover {
-      background-color: var(--color-two);
-      color: white;
-    }
-    @media (max-width: 768px) {
-      background-color: transparent;
-      border: 1px solid var(--color-two);
-      font-size: 0.7rem;
-      padding: 0.5em 1rem;
-    }
-  }
-  .start {
-    background-color: var(--color-two);
-    color: white;
-    border: 1px solid transparent;
-    &:hover {
-      border: 1px solid var(--color-two);
-      background-color: white;
-      color: #202427;
-    }
-    @media (max-width: 999px) {
-      display: none;
-    }
-  }
-  
+
   #section-1 {
     width: 100%;
     height: 100%;
@@ -666,39 +567,7 @@
       }
     }
   }
-  .footer {
-    background-color: #008659;
-    color: #fff;
-    font-family: "Poppins", sans-serif;
-    padding: 15px;
-    .flex {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      p {
-        font-size: 25px;
-      }
-      .icons {
-        font-size: 25px;
-        i {
-          margin-right: 15px;
-        }
-      }
-    }
-    .li {
-      p {
-        font-size: 1.2rem;
-        line-height: 60px;
-        cursor: pointer;
-        transition: 0.3s;
-        margin: 0;
-       
-      }
-    }
-    hr {
-      color: #fff;
-    }
-  }
+  
   @media only screen and (max-width: 600px) {
     .contact {
       .box:nth-child(2) {
@@ -710,59 +579,7 @@
     }
   }
   
-  aside {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: var(--color-one-light);
-    header {
-      height: 10%;
-      background-color: var(--color-two);
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 1rem;
-      .one {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 1.5rem;
-      }
-      img {
-        width: 3.5rem;
-        height: 3.5rem;
-        border-radius: 50%;
-      }
-      h3 {
-        font-size: 0.7rem;
-        color: #fff;
-        font-weight: 400;
-      }
-      i {
-        color: #fff;
-        font-size: 2rem;
-      }
-    }
-    ul {
-      width: 100%;
-      height: 100%;
-      li {
-        padding: 1.2rem 1rem;
-        color: var(--color-two);
-        width: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-        gap: 1rem;
-        font-size: 1rem;
-        i {
-          font-size: 1.6rem;
-        }
-      }
-    }
-  }
+ 
   
   #aeps_section {
     width: 100%;
@@ -865,6 +682,10 @@
         img {
           width: 3rem;
           height: 3rem;
+        }
+        h3{
+          font-size: 1.3rem;
+          font-weight: 500;
         }
         p {
           text-align: center;
@@ -1004,7 +825,7 @@
   
   
   
-  .sec4 {
+  #aboutUs  {
     width: 100%;
     background-color: #ebf7f4;
     display: inline-block;
@@ -1193,7 +1014,8 @@
           
         }
         .app-btn{
-          display: none;
+        transform: scale(0.7);
+        margin-top: 1rem;
         }
         .boxesss{
           display: none;
