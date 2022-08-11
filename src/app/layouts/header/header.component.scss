@@ -111,6 +111,7 @@
     left: 0;
     height: 100%;
     width: 100%;
+    z-index: 999;
     background-color: var(--color-one-light);
     header {
       height: 10%;
@@ -153,7 +154,8 @@
         gap: 1rem;
         font-size: 1rem;
         a{
-          color: white;
+          color:  var(--color-two);
+          text-decoration: none;
           text-decoration: none;
         }
         i {
