@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "ssspay-prod": {
+      "hosting": {
+        "ssspaysite": [
+          "ssspay"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "ssspay-prod"
+  }
+}
